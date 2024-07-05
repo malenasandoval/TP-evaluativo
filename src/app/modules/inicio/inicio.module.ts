@@ -1,28 +1,34 @@
+// MODULOS IMPORTADOS DE ANGULAR 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { InicioRoutingModule } from './inicio-routing.module';// modulo de ruteo del la aplicacion -> manejo de rutas
+// IMMPORTACION DE MODULO DE RUTEO DE INICIO
+import { InicioRoutingModule } from './inicio-routing.module';
 
 // COMPONENTES LOCALES
-import { InicioComponent } from './pages/inicio/inicio.component'; // vista principal
-import { CardComponent } from './components/card/card.component'; //  componente utilizado dentro de la sección "Inicio" para mostrar tarjetas de contenid
+// VISTA - PÁGINA - INTERFAZ DEL USUARIO
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { CardComponent } from './components/card/card.component';
 
-// COMPONENTES QUE IMPORTAMOS DE A MATERIAL
+// COMPONENTES QUE IMPORTAMOS DESDE MATERIAL
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
+    // DECLARACION DE MODULOS PERTENECIENTES A ESTE MODULO
     CardComponent,
     InicioComponent
   ],
   imports: [
+    // IMPORTACION DE MODULOS NECESARIOS PARA ESTE MODULO
     CommonModule,
     InicioRoutingModule,
     MatButtonModule,
     MatCardModule
   ],
   exports: [
+    // EXPORTACION DE MODULOS Y COMPONENTES PARA UTILIZAR EN OTROS MODULOS
     MatButtonModule,
     MatCardModule
   ]
