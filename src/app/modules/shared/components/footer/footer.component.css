@@ -1,0 +1,41 @@
+/* footer.component.css */
+.footer {
+    background-color: #212121;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    margin-top: 0;
+  }
+  
+  .social-media a {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+  }
+  

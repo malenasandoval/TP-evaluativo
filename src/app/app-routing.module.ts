@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component';
+import { InicioComponent } from './modules/inicio/pages/inicio/inicio.component'; // componente que se muestra cuando se accede a la ruta principal
 
 // variable de tipo array que contiene todas las rutas de la pagina
 const routes: Routes = [
@@ -15,6 +15,7 @@ const routes: Routes = [
   {
     path: "",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)
   },
+  
   {
     path: "",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)
   }

@@ -4,11 +4,12 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 
 const routes: Routes = [
   {
-    path: "",component:InicioComponent
+    path: "",component:InicioComponent //carga el componente cuando se accede a la ruta raíz
   },
   
   {
-    path: "inicio",component:InicioComponent
+    path: "inicio",component:InicioComponent //carga el componente cuando se accede a la ruta "/inicio".
+
   },
 
 ];

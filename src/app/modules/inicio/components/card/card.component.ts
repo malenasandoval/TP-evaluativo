@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Ropa } from 'src/app/models/ropa';
-// importamos interfaz para animales
+import { Ropa } from 'src/app/models/ropa'; //importacion de interfaz para ropa
 
 @Component({
   selector: 'app-card',
@@ -8,10 +7,10 @@ import { Ropa } from 'src/app/models/ropa';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  // PROPIEDAD PUBLICA -> TIPO ARRAY
+  // propiedad publica "info" -> array de objetos del tipo ropa
   public info: Ropa [];
 
-  //INICIALIZAR LA PROPIEDAD INFO
+  //inicializar la propiedad con arrays
   constructor() {
     this.info = [
       {

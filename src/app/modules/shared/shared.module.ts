@@ -10,9 +10,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatDividerModule } from '@angular/material/divider';
+import {MatListModule } from '@angular/material/list';
 
 //IMPORTADAS TODAS LAS RUTAS // RUTAS GENERALES DE TODOS LOS MODULOS
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AppRoutingModule } from 'src/app/app-routing.module'; // modulo de ruteo del la aplicacion -> manejo de rutas
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDividerModule,
+    MatListModule
   ],
   exports: [
     NavbarComponent,
