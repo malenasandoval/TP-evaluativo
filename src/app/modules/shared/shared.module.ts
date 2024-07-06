@@ -13,6 +13,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule } from '@angular/material/divider';
 import {MatListModule } from '@angular/material/list';
+import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
+
 
 // IMPORTACION DEL MODULO DE RUTEO // TODAS RUTAS GENERALES DE TODOS LOS MODULOS
 import { AppRoutingModule } from 'src/app/app-routing.module'; // modulo de ruteo del la aplicacion -> manejo de rutas
@@ -32,7 +34,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module'; // modulo de rute
     MatToolbarModule,
     MatMenuModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule
   ],
   exports: [
     // EXPORTACION DE MODULOS Y COMPONENTES PARA UTILIZAR EN OTROS MODULOS

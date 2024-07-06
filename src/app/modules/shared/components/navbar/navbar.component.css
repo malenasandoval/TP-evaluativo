@@ -1,11 +1,54 @@
-.example-spacer {
-    flex: 1 1 auto;
-}
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
     background-color: black;
     color: white;
-    height: 15%;
-}
+  }
+
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex: 1; /* El buscador ocupará todo el espacio disponible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+  }
+  
+  .search-field {
+    width: 100%; /* El campo de búsqueda ocupa todo el ancho disponible */
+    max-width: 50%; /* Ajusta el ancho máximo del campo de búsqueda según sea necesario */
+  }
+  
+  .search-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  
+  .search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-underline,
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    display: none; /* Oculta el borde de la caja de texto en modo outline */
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-flex {
+    padding: 0; /* Elimina el padding adicional en modo outline */
+  }
+  
+  .mat-icon-button {
+    color: white;
+  }
+  
+  
   
 /* Declaramos con palabra reservada MEDIA*/
 /*Técnica introducida por CSS3 que permite crear e implementar diseños  especipicos según el dispositivo que estás usando*/
