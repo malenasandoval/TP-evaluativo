@@ -4,18 +4,70 @@
     justify-content: center;
 }
 
-h1{
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .card {
+    width: 200px; /* Ancho de cada tarjeta */
+    margin: 10px; /* Espacio entre las tarjetas */
     text-align: center;
-}
-
-.contenido{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para asegurar que las imágenes no se desborden */
+  }
+  
+  .card img {
+    width: 100%; /* Para asegurar que la imagen ocupe todo el espacio disponible */
+    height: auto;
+  }
+  
+  .card-title {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
     width: 200px;
-    display: inline-block;
-    padding: 15px;
-    border-radius: 8px;
     margin: 10px;
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Ajusta el ancho de las tarjetas en dispositivos pequeños */
+    }
 }
 
-p{
-    padding: 5px;
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px); /* Ajusta el ancho de las tarjetas en dispositivos muy pequeños */
+        margin: 10px 0;
+    }
 }

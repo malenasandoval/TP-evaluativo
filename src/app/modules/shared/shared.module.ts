@@ -14,6 +14,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule } from '@angular/material/divider';
 import {MatListModule } from '@angular/material/list';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 // IMPORTACION DEL MODULO DE RUTEO // TODAS RUTAS GENERALES DE TODOS LOS MODULOS
@@ -35,7 +36,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module'; // modulo de rute
     MatMenuModule,
     MatDividerModule,
     MatListModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTabsModule
   ],
   exports: [
     // EXPORTACION DE MODULOS Y COMPONENTES PARA UTILIZAR EN OTROS MODULOS
